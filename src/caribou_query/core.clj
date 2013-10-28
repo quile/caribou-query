@@ -47,43 +47,38 @@
 
 (def order order-by)
 
+
 (comment
   (-> (query)
-      (where {:a "foo"}))
-  )
+      (where {:a "foo"})))
 
 (comment
   (-> (query)
       (where {:a "this"})
       (where {:b "that"})
-      (where {:c {:d "another"}}))
-  )
+      (where {:c {:d "another"}})))
 
 (comment
   (-> (query)
       (where {:a "foo"})
-      (limit 10))
-  )
+      (limit 10)))
 
 (comment
   (-> (query)
       (where {:a "foo"})
-      (offset 10))
-  )
+      (offset 10)))
 
 (comment
   (-> (query)
       (where {:a "foo"})
       (include {:this {}})
-      (include {:that {:another {}}}))
-  )
+      (include {:that {:another {}}})))
 
 (comment
   (-> (query :thing)
       (where {:a "foo"})
       (order-by {:this :asc})
-      (include {:that {:another {}}}))
-  )
+      (include {:that {:another {}}})))
 
 (comment
   (-> (query)
@@ -95,6 +90,4 @@
 (comment
   (-> (query)
       (where :a "foo")
-      (where [:b :c :e] "bar")
-      )
-  )
+      (where [:b :c :e] "bar")))
