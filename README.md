@@ -1,3 +1,5 @@
+## *NOTE: THIS IS NOW INCORPORATED INTO CARIBOU CORE*
+
 # caribou-query
 
 This is just a set of very simple functions that simplify the
